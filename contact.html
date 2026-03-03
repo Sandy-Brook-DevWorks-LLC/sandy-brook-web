@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--suppress HtmlDeprecatedAttribute, JSUnresolvedLibraryURL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sandy Brook DevWorks LLC</title>
+    <meta name="description" content="Get in touch with Sandy Brook DevWorks for Fractional CTO services and strategic technical leadership.">
+    <link rel="icon" type="image/jpeg" href="blue_logo.jpg">
+    <link rel="apple-touch-icon" href="blue_logo.jpg">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+            --color-brand: var(--brand-teal);
+            --color-brand-light: var(--brand-teal-light);
+            --color-brand-dark: var(--brand-teal-dark);
+            --color-brand-shadow: rgba(26, 95, 107, 0.25);
+        }
+        @custom-variant dark (&:where(.dark, .dark *));
+        :root {
+            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+            --brand-teal: #1a5f6b;
+            --brand-teal-light: #2d8291;
+            --brand-teal-dark: #12444d;
+        }
+        body {
+            font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .bg-grid-slate-100 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(26 95 107 / 0.05)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
+        }
+        .dark .bg-grid-slate-100 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(45 130 145 / 0.1)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
+        }
+        /* Custom Tailwind accents using the logo's teal */
+        .hover-bg-brand:hover { background-color: var(--brand-teal-light); }
+        .dark .hover-bg-brand:hover { background-color: var(--brand-teal); }
+
+        /* Support for dark mode variations of brand colors */
+        .dark .text-brand { color: var(--brand-teal-light); }
+        .dark .bg-brand { background-color: var(--brand-teal-light); }
+        .dark .border-brand { border-color: var(--brand-teal-light); }
+    </style>
+    <script>
+        // System preference theme toggle logic
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark')
+                localStorage.theme = 'light'
+            } else {
+                document.documentElement.classList.add('dark')
+                localStorage.theme = 'dark'
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 transition-colors duration-300">
+    <div class="fixed inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full border-b border-slate-200/40 bg-white/80 backdrop-blur-md dark:border-slate-800/40 dark:bg-slate-950/80">
+        <div class="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+            <div class="flex items-center gap-4 font-bold text-xl tracking-tight">
+                <a href="index.html" class="relative group" aria-label="Sandy Brook DevWorks Home">
+                    <div class="absolute -inset-1 rounded-full bg-brand/20 blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                    <img src="blue_logo.jpg" alt="Sandy Brook DevWorks Logo" class="relative h-12 w-12 rounded-full border border-slate-200 dark:hidden shadow-sm">
+                    <img src="dark_logo.jpg" alt="Sandy Brook DevWorks Logo" class="relative hidden h-12 w-12 rounded-full border border-slate-800 dark:block shadow-sm">
+                </a>
+                <div class="flex flex-col leading-tight">
+                    <span class="text-brand">Sandy Brook</span>
+                    <span class="text-xs font-medium tracking-widest uppercase text-slate-500 dark:text-slate-400">DevWorks</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html#services" class="hover:text-brand transition-colors">Services</a>
+                <a href="index.html#about" class="hover:text-brand transition-colors">About</a>
+                <a href="index.html#product-lab" class="hover:text-brand transition-colors">Product Lab</a>
+                <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle Theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dark:hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden dark:block"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://calendar.app.google/ZToWtNESKPuPevMu8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-brand px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-shadow transition-all hover-bg-brand hover:scale-105 active:scale-95">
+                    Book a Call
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-6">Let's Build Something <span class="text-brand">Substantial.</span></h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    Whether you need strategic oversight or a high-performance build, I'm here to help you navigate the technical path forward.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-8">Send a Message</h2>
+                    <form id="contact-form" action="https://formspree.io/f/xjgeqnpj" method="POST" class="space-y-6">
+                        <input type="hidden" name="_subject" value="New Strategic Lead from SandyBrookDevWorks.com">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Business Email</label>
+                            <input type="email" id="email" name="email" required class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900">
+                        </div>
+                        <div>
+                            <label for="website" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Website URL (Optional)</label>
+                            <input type="url" id="website" name="website" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900" placeholder="https://">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900"></textarea>
+                        </div>
+                        <div id="error-message" class="hidden rounded-xl bg-red-50 p-4 text-red-800 dark:bg-red-900/30 dark:text-red-400">
+                            Something went wrong. Please try again or reach out directly at <a href="mailto:hello@sandybrook.io" class="underline font-medium">hello@sandybrook.dev</a>.
+                        </div>
+                        <button type="submit" id="submit-button" class="w-full rounded-full bg-brand py-4 text-lg font-bold text-white shadow-xl shadow-brand-shadow transition-all hover-bg-brand hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- FAQ Section -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-brand">What is a Fractional CTO?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Think of it as having a high-level technology partner on speed dial without the $250k executive salary. I provide the strategy and oversight your business needs to grow.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-brand">Do you work with non-technical owners?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Absolutely. My job is to translate complex tech into clear business outcomes. You focus on your vision; I’ll handle the "how."
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-brand">Is there a minimum project size?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                I work on everything from high-impact "sprint" fixes to long-term monthly retainers. Let’s talk and see what fits your current stage.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-brand">Are you local to Texas?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Yes, I’m based in Central Texas and value working with local businesses where face-to-face trust matters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <a href="index.html" class="flex items-center gap-3 font-bold text-xl group transition-transform hover:scale-105" aria-label="Sandy Brook DevWorks Home">
+                    <img src="blue_logo.jpg" alt="Sandy Brook DevWorks Logo" class="h-8 w-8 rounded-full dark:hidden">
+                    <img src="dark_logo.jpg" alt="Sandy Brook DevWorks Logo" class="hidden h-8 w-8 rounded-full dark:block">
+                    <div>
+                        <span class="text-brand">Sandy Brook</span> DevWorks
+                    </div>
+                </a>
+                <div class="flex gap-8 text-sm text-slate-500">
+                    <a href="index.html#services" class="hover:text-brand transition-colors">Services</a>
+                    <a href="index.html#about" class="hover:text-brand transition-colors">About</a>
+                    <a href="index.html#product-lab" class="hover:text-brand transition-colors">Product Lab</a>
+                    <a href="#" class="hover:text-brand transition-colors font-bold text-brand">Contact</a>
+                </div>
+                <div class="text-sm text-slate-500">
+                    &copy; 2026 Sandy Brook DevWorks LLC. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const form = document.getElementById('contact-form');
+        const submitButton = document.getElementById('submit-button');
+        const errorMessage = document.getElementById('error-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Reset state
+            submitButton.disabled = true;
+            submitButton.innerText = 'Sending...';
+            errorMessage.classList.add('hidden');
+
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Success: Redirect to thank-you.html
+                    window.location.href = 'thank-you.html';
+                } else {
+                    // Error response from Formspree
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Catch network errors or other issues
+                errorMessage.classList.remove('hidden');
+                
+                // Reset button state
+                submitButton.disabled = false;
+                submitButton.innerText = 'Send Message';
+            }
+        });
+    </script>
+</body>
+</html>
