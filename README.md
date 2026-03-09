@@ -19,7 +19,7 @@ This repository contains the source code for the Sandy Brook DevWorks landing pa
 - **Strategic Branding**: Focused on "Fractional CTO" services and "Outcome-Based Pricing."
 - **Responsive Design**: Fully mobile-friendly layout.
 - **Dark Mode Support**: System-preference-aware theme toggling.
-- **Product Lab Section**: Showcasing internal projects like **CogniWatch**.
+- **Projects Lab Section**: Showcasing internal projects like **CogniWatch**.
 - **Integrated Contact Flow**:
   - Custom AJAX form submission with loading states and error handling.
   - Dedicated "Thank You" confirmation page.
