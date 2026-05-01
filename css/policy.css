@@ -1,0 +1,9 @@
+.prose-policy h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; }
+.prose-policy h3 { font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--brand-teal); }
+.dark .prose-policy h3 { color: var(--brand-teal-light); }
+.prose-policy p { margin-bottom: 1rem; line-height: 1.75; }
+.prose-policy ul { margin-bottom: 1rem; padding-left: 1.5rem; list-style-type: disc; }
+.prose-policy li { margin-bottom: 0.5rem; line-height: 1.75; }
+.prose-policy a { color: var(--brand-teal); text-decoration: underline; }
+.dark .prose-policy a { color: var(--brand-teal-light); }
+.prose-policy strong { font-weight: 600; }

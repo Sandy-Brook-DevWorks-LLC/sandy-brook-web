@@ -31,8 +31,9 @@ This repository contains the source code for the Sandy Brook DevWorks landing pa
 - `contact.html` — Contact form and FAQ section.
 - `thank-you.html` — Form submission confirmation page.
 - `privacy.html`, `terms.html` — Legal pages.
-- `pipeline_light.webp` / `pipeline_dark.webp`, `strategic_delivery.webp` — Section illustrations.
-- `blue_logo.jpg` / `dark_logo.jpg` — Logos (light/dark variants).
+- `css/` — Shared site styles (`site.css`) and policy-page styles (`policy.css`).
+- `js/` — Theme toggle (`theme.js`) and contact-form handler (`contact.js`).
+- `images/` — All site images (logos, section illustrations, favicons).
 - `_source-images/` — Original high-res source files (gitignored).
 - `scripts/generate_image.py` — CLI helper for generating/editing assets via the Gemini image API.
 

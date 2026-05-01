@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandy Brook DevWorks LLC | Tech That Works for Your Business</title>
     <meta name="description" content="Your neighbor who knows enterprise software. Custom automation, AI-powered tools, and .NET solutions that help small businesses work smarter without the corporate price tag.">
-    <link rel="icon" type="image/jpeg" href="blue_logo.jpg">
-    <link rel="apple-touch-icon" href="blue_logo.jpg">
+    <link rel="icon" type="image/jpeg" href="images/blue_logo.jpg">
+    <link rel="apple-touch-icon" href="images/blue_logo.jpg">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,48 +20,9 @@
             --color-brand-shadow: rgba(26, 95, 107, 0.25);
         }
         @custom-variant dark (&:where(.dark, .dark *));
-        :root {
-            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-            --brand-teal: #1a5f6b;
-            --brand-teal-light: #2d8291;
-            --brand-teal-dark: #12444d;
-        }
-        body {
-            font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-        .bg-grid-slate-100 {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(26 95 107 / 0.05)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
-        }
-        .dark .bg-grid-slate-100 {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(45 130 145 / 0.1)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
-        }
-        /* Custom Tailwind accents using the logo's teal */
-        .hover-bg-brand:hover { background-color: var(--brand-teal-light); }
-        .dark .hover-bg-brand:hover { background-color: var(--brand-teal); }
-
-        /* Support for dark mode variations of brand colors */
-        .dark .text-brand { color: var(--brand-teal-light); }
-        .dark .bg-brand { background-color: var(--brand-teal-light); }
-        .dark .border-brand { border-color: var(--brand-teal-light); }
     </style>
-    <script>
-        // System preference theme toggle logic
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-
-        function toggleTheme() {
-            if (document.documentElement.classList.contains('dark')) {
-                document.documentElement.classList.remove('dark')
-                localStorage.theme = 'light'
-            } else {
-                document.documentElement.classList.add('dark')
-                localStorage.theme = 'dark'
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/theme.js"></script>
 </head>
     <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 transition-colors duration-300">
     <div class="fixed inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10 pointer-events-none"></div>
@@ -72,8 +33,8 @@
             <div class="flex items-center gap-4 font-bold text-xl tracking-tight">
                 <a href="#" class="relative group" aria-label="Sandy Brook DevWorks Home">
                     <div class="absolute -inset-1 rounded-full bg-brand/20 blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                    <img src="blue_logo.jpg" alt="Sandy Brook DevWorks Logo" class="relative h-12 w-12 rounded-full border border-slate-200 dark:hidden shadow-sm">
-                    <img src="dark_logo.jpg" alt="Sandy Brook DevWorks Logo" class="relative hidden h-12 w-12 rounded-full border border-slate-800 dark:block shadow-sm">
+                    <img src="images/blue_logo.jpg" alt="Sandy Brook DevWorks Logo" class="relative h-12 w-12 rounded-full border border-slate-200 dark:hidden shadow-sm">
+                    <img src="images/dark_logo.jpg" alt="Sandy Brook DevWorks Logo" class="relative hidden h-12 w-12 rounded-full border border-slate-800 dark:block shadow-sm">
                 </a>
                 <div class="flex flex-col leading-tight">
                     <span class="text-brand">Sandy Brook</span>
@@ -103,8 +64,8 @@
         <section class="container mx-auto px-4 py-20 md:py-32 flex flex-col items-center text-center">
             <div class="mb-8 relative">
                 <div class="absolute -inset-4 rounded-full bg-brand/10 blur-xl dark:bg-brand/20"></div>
-                <img src="blue_logo.jpg" alt="Sandy Brook DevWorks" class="relative h-24 w-24 md:h-32 md:w-32 rounded-full border-4 border-white shadow-2xl dark:hidden">
-                <img src="dark_logo.jpg" alt="Sandy Brook DevWorks" class="relative hidden h-24 w-24 md:h-32 md:w-32 rounded-full border-4 border-slate-900 shadow-2xl dark:block">
+                <img src="images/blue_logo.jpg" alt="Sandy Brook DevWorks" class="relative h-24 w-24 md:h-32 md:w-32 rounded-full border-4 border-white shadow-2xl dark:hidden">
+                <img src="images/dark_logo.jpg" alt="Sandy Brook DevWorks" class="relative hidden h-24 w-24 md:h-32 md:w-32 rounded-full border-4 border-slate-900 shadow-2xl dark:block">
             </div>
             <div class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-sm font-semibold text-brand shadow-sm dark:border-brand/40 dark:bg-brand/10 dark:text-brand mb-6 transition-all hover:border-brand/60">
                 <span class="relative flex h-2 w-2 mr-2">
@@ -201,8 +162,8 @@
                 </div>
                 <div class="flex-1 w-full max-w-xl">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800">
-                        <img src="pipeline_light.webp" alt="Idea-to-Production Pipeline" class="w-full h-auto dark:hidden">
-                        <img src="pipeline_dark.webp" alt="Idea-to-Production Pipeline" class="hidden w-full h-auto dark:block">
+                        <img src="images/pipeline_light.webp" alt="Idea-to-Production Pipeline" class="w-full h-auto dark:hidden">
+                        <img src="images/pipeline_dark.webp" alt="Idea-to-Production Pipeline" class="hidden w-full h-auto dark:block">
                     </div>
                 </div>
             </div>
@@ -234,7 +195,7 @@
                 <div class="md:w-1/3">
                     <div class="group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800">
                         <div class="absolute inset-0 bg-brand/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <img src="strategic_delivery.webp" alt="Developer helping a small business owner at a laptop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <img src="images/strategic_delivery.webp" alt="Developer helping a small business owner at a laptop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-6">
                             <span class="text-xs font-bold tracking-widest text-white uppercase">Your Tech Neighbor</span>
                         </div>
@@ -274,7 +235,7 @@
                         <div class="flex flex-col bg-slate-800 rounded-3xl p-8 border border-slate-700 transition-all hover:border-brand/50 hover:shadow-2xl hover:shadow-brand-shadow/20">
                             <div class="flex items-center gap-4 mb-6">
                                 <div class="flex-none w-20 h-20 rounded-2xl overflow-hidden shadow-xl border border-slate-700">
-                                    <img src="cogniwatch_logo.webp" alt="KnowItOwl! App" class="w-full h-full object-cover">
+                                    <img src="images/cogniwatch_logo.webp" alt="KnowItOwl! App" class="w-full h-full object-cover">
                                 </div>
                                 <div>
                                     <h3 class="text-xl font-bold text-brand">KnowItOwl!</h3>
@@ -294,7 +255,7 @@
                         <div class="flex flex-col bg-slate-800 rounded-3xl p-8 border border-slate-700 transition-all hover:border-brand/50 hover:shadow-2xl hover:shadow-brand-shadow/20">
                             <div class="flex items-center gap-4 mb-6">
                                 <div class="flex-none w-20 h-20 rounded-2xl overflow-hidden shadow-xl border border-slate-700">
-                                    <img src="aquorbis_logo.webp" alt="Aquorbis App" class="w-full h-full object-cover">
+                                    <img src="images/aquorbis_logo.webp" alt="Aquorbis App" class="w-full h-full object-cover">
                                 </div>
                                 <div>
                                     <h3 class="text-xl font-bold text-brand">Aquorbis</h3>
@@ -314,7 +275,7 @@
                         <div class="flex flex-col bg-slate-800 rounded-3xl p-8 border border-slate-700 transition-all hover:border-brand/50 hover:shadow-2xl hover:shadow-brand-shadow/20">
                             <div class="flex items-center gap-4 mb-6">
                                 <div class="flex-none w-20 h-20 rounded-2xl overflow-hidden shadow-xl border border-slate-700">
-                                    <img src="relay_logo.webp" alt="Relay App" class="w-full h-full object-cover">
+                                    <img src="images/relay_logo.webp" alt="Relay App" class="w-full h-full object-cover">
                                 </div>
                                 <div>
                                     <h3 class="text-xl font-bold text-brand">Relay</h3>
@@ -362,8 +323,8 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center gap-8">
                 <a href="#" class="flex items-center gap-3 font-bold text-xl group transition-transform hover:scale-105" aria-label="Sandy Brook DevWorks Home">
-                    <img src="blue_logo.jpg" alt="Sandy Brook DevWorks Logo" class="h-8 w-8 rounded-full dark:hidden">
-                    <img src="dark_logo.jpg" alt="Sandy Brook DevWorks Logo" class="hidden h-8 w-8 rounded-full dark:block">
+                    <img src="images/blue_logo.jpg" alt="Sandy Brook DevWorks Logo" class="h-8 w-8 rounded-full dark:hidden">
+                    <img src="images/dark_logo.jpg" alt="Sandy Brook DevWorks Logo" class="hidden h-8 w-8 rounded-full dark:block">
                     <div>
                         <span class="text-brand">Sandy Brook</span> DevWorks
                     </div>
