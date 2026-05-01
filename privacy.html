@@ -106,7 +106,7 @@
         <div class="max-w-3xl mx-auto">
             <div class="mb-10">
                 <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4">Privacy <span class="text-brand">Policy</span></h1>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Last updated: April 30, 2026</p>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Last updated: May 1, 2026</p>
             </div>
 
             <div class="prose-policy text-slate-700 dark:text-slate-300">
@@ -120,7 +120,7 @@
                 <ul>
                     <li><strong>Contact form data.</strong> Name, business email, website URL, and message text when you submit our contact form.</li>
                     <li><strong>Scheduling data.</strong> Your name, email, and meeting details when you book a discovery call through our Google Calendar integration.</li>
-                    <li><strong>Account data (Relay platform).</strong> Business name, owner email, authentication identifiers, billing information (processed by Stripe — we do not store card numbers), and phone-number preferences.</li>
+                    <li><strong>Account data (Relay platform).</strong> Business name, owner email, authentication identifiers (including, where you register one, a WebAuthn passkey credential — public key, sign count, and user handle; no biometric data is collected or transmitted to us), billing information (processed by Stripe — we do not store card numbers), and phone-number preferences.</li>
                 </ul>
 
                 <h3>Information collected automatically</h3>
@@ -182,6 +182,10 @@
                     Tenant alert frequency depends on the events the subscribing business has enabled — typically one message per inbound voicemail or appointment, plus an optional once-per-day digest. Caller confirmations are limited to one per booked appointment plus, where applicable, one cancellation message. <strong>Message and data rates may apply</strong> based on your mobile carrier plan. Sandy Brook DevWorks is not responsible for carrier charges you incur.
                 </p>
 
+                <p>
+                    <strong>See also:</strong> <a href="https://relay.sandybrook.io/messaging-policy">Relay's public messaging policy</a> — the matching disclosure for our 10DLC campaign registration with The Campaign Registry.
+                </p>
+
                 <h2>3. How We Use Information</h2>
                 <ul>
                     <li>To respond to contact form inquiries and schedule discovery calls.</li>
@@ -202,6 +206,7 @@
                 </p>
                 <ul>
                     <li><strong>Google Cloud Platform</strong> — hosting, Firestore database, Cloud Run compute, Vertex AI (Gemini) language model, and Google Calendar (only for businesses that connect it).</li>
+                    <li><strong>Google Identity Platform (Firebase Auth)</strong> — stores email/password authentication credentials for Relay subscribers; passwords are never transmitted to or stored by Sandy Brook.</li>
                     <li><strong>Twilio</strong> — telephony and SMS delivery infrastructure.</li>
                     <li><strong>Stripe</strong> — subscription and usage billing.</li>
                     <li><strong>SendGrid</strong> — transactional email notifications.</li>

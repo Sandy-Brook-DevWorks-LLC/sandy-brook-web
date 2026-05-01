@@ -1,4 +1,5 @@
 _source-images/
+.claude/
 .idea/
 .venv/
 __pycache__/
