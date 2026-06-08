@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Sandy Brook DevWorks LLC</title>
-    <meta name="description" content="Privacy Policy for Sandy Brook DevWorks LLC. How we collect, use, and protect your information — including SMS notifications and booking confirmations sent by our Relay platform.">
+    <meta name="description" content="Privacy Policy for Sandy Brook DevWorks LLC. How we collect, use, and protect your information — including call recordings, transcripts, summaries, and email notifications for the Relay platform.">
     <link rel="icon" type="image/jpeg" href="images/blue_logo.jpg">
     <link rel="apple-touch-icon" href="images/blue_logo.jpg">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -64,12 +64,12 @@
         <div class="max-w-3xl mx-auto">
             <div class="mb-10">
                 <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl mb-4">Privacy <span class="text-brand">Policy</span></h1>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Last updated: May 1, 2026</p>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Last updated: June 8, 2026</p>
             </div>
 
             <div class="prose-policy text-slate-700 dark:text-slate-300">
                 <p>
-                    This Privacy Policy describes how <strong>Sandy Brook DevWorks LLC</strong> ("Sandy Brook," "we," "us," or "our") collects, uses, and safeguards information when you visit <a href="https://sandybrookdevworks.com">sandybrookdevworks.com</a>, interact with our consulting services, or use our <strong>Relay</strong> platform (available at <a href="https://relay.sandybrook.io">relay.sandybrook.io</a>). By using our website, services, or receiving SMS sent on Relay's behalf, you agree to the practices described below.
+                    This Privacy Policy describes how <strong>Sandy Brook DevWorks LLC</strong> ("Sandy Brook," "we," "us," or "our") collects, uses, and safeguards information when you visit <a href="https://sandybrookdevworks.com">sandybrookdevworks.com</a>, interact with our consulting services, or use our <strong>Relay</strong> platform (marketed at <a href="https://relayconnect.net">relayconnect.net</a> and available at <a href="https://relay.sandybrook.io">relay.sandybrook.io</a>). By using our website or services, you agree to the practices described below.
                 </p>
 
                 <h2>1. Information We Collect</h2>
@@ -87,67 +87,41 @@
                     <li><strong>Theme preference.</strong> Whether you selected light or dark mode, stored in your browser's local storage. This stays on your device.</li>
                 </ul>
 
-                <h3>Information collected through voice and SMS (Relay platform)</h3>
+                <h3>Information collected through voice calls (Relay platform)</h3>
                 <p>
-                    When you call a phone number provisioned through our Relay platform, we collect the phone numbers involved, the time of the call, the audio recording, and the AI-generated transcript and summary. Tenant-provisioned numbers are voice-only — inbound SMS to those numbers is silently dropped at the carrier and is not processed by Relay. When the SMS add-on is active, Relay sends outbound SMS from a single Sandy Brook–operated number; for those messages we collect: recipient phone number, message body, segment count returned by the carrier, and delivery status. For caller booking confirmations, we additionally store an opt-in audit record (timestamp, originating call SID, source = verbal-receptionist).
+                    When you call a phone number provisioned through our Relay platform, we collect the phone numbers involved, the time and duration of the call, the audio recording, and the AI-generated transcript and summary. Relay uses this information to answer calls, classify urgency, book appointments when configured by the subscribing business, transfer urgent calls when configured, and email clean summaries to the business.
                 </p>
 
-                <h2 id="sms">2. SMS / Text Messaging — Important Disclosures</h2>
+                <h2>2. Relay Notifications</h2>
 
                 <p>
-                    All Relay SMS traffic is <strong>outbound and transactional</strong>, sent from a single Sandy Brook–operated number under our 10DLC campaign. Relay does not accept inbound SMS on tenant-provisioned numbers, and Relay does not send marketing, promotional, or broadcast SMS. The disclosures below apply to every recipient of a Relay message.
+                    Relay currently sends tenant and caller notifications by email only. It does not send SMS/text messages, marketing blasts, or broadcast notifications, and tenant-provisioned phone numbers are voice-only.
                 </p>
 
-                <h3>When we will text you</h3>
+                <h3>When we will email you</h3>
                 <p>
-                    There are two cases in which you may receive an SMS sent on behalf of Relay:
+                    There are three cases in which you may receive email from Relay:
                 </p>
                 <ul>
-                    <li><strong>You're a subscribing business owner who opted in.</strong> When you activate the SMS add-on and verify a recipient phone via a one-time code, Relay sends you transactional alerts for the events you choose in your dashboard (new voicemail, urgent voicemail, daily summary, appointment booked).</li>
-                    <li><strong>You're a caller who verbally agreed during a Receptionist call.</strong> If you ask the AI receptionist to book an appointment, it will offer to send you a text confirmation. If you say yes and provide a phone number, Relay sends one confirmation message; if the business later cancels the appointment from their dashboard, Relay may send one cancellation message.</li>
+                    <li><strong>You're a subscribing business owner or configured recipient.</strong> Relay emails per-call summaries, urgency flags, and optional daily call digests to the addresses configured by the business.</li>
+                    <li><strong>You're a caller who requested an appointment confirmation.</strong> If the AI receptionist books an appointment and you provide an email address, Relay may send an appointment confirmation and, if applicable, a cancellation notice.</li>
+                    <li><strong>You're an account user.</strong> Relay may email account, billing, authentication, or service notices related to your use of the platform.</li>
                 </ul>
-                <p>
-                    Relay will not text you outside one of these two cases.
-                </p>
 
-                <h3>What we do with SMS data</h3>
+                <h3>What we do with notification data</h3>
                 <p>
-                    Recipient phone numbers, message bodies, segment counts, and delivery statuses are processed <strong>solely</strong> to operate the notification service the subscribing business has configured and to record the caller verbal-consent log required for compliance.
+                    Recipient email addresses, message contents, delivery metadata, and appointment details are processed <strong>solely</strong> to operate the Relay notification service, deliver account-related notices, and maintain service records.
                 </p>
 
                 <h3>We do not sell or share your data for marketing</h3>
                 <p>
-                    <strong>We do not sell your phone number, message content, or any other personal information to third parties.</strong> We do not share your data with third parties for their own marketing purposes. Mobile phone numbers and SMS consent are <strong>not</strong> shared with third parties or affiliates for marketing under any circumstances.
-                </p>
-
-                <h3>Opting out of SMS (STOP)</h3>
-                <p>
-                    You can opt out of all Relay messages at any time by replying <strong>STOP</strong>, <strong>UNSUBSCRIBE</strong>, <strong>CANCEL</strong>, <strong>QUIT</strong>, or <strong>END</strong> to a message we sent you. You will receive one confirmation message, and no further messages will be sent to you on Relay's behalf — for any subscribing business.
-                </p>
-
-                <h3>Getting help (HELP)</h3>
-                <p>
-                    Reply <strong>HELP</strong> to a Relay message for information about the service. You may also contact us directly at <a href="mailto:hello@sandybrook.io">hello@sandybrook.io</a>.
-                </p>
-
-                <h3>Geographic scope</h3>
-                <p>
-                    Relay SMS currently delivers to U.S. and Canadian numbers (NANP) only. Messages to numbers outside that range are not sent.
-                </p>
-
-                <h3>Message frequency and rates</h3>
-                <p>
-                    Tenant alert frequency depends on the events the subscribing business has enabled — typically one message per inbound voicemail or appointment, plus an optional once-per-day digest. Caller confirmations are limited to one per booked appointment plus, where applicable, one cancellation message. <strong>Message and data rates may apply</strong> based on your mobile carrier plan. Sandy Brook DevWorks is not responsible for carrier charges you incur.
-                </p>
-
-                <p>
-                    <strong>See also:</strong> <a href="https://relay.sandybrook.io/messaging-policy">Relay's public messaging policy</a> — the matching disclosure for our 10DLC campaign registration with The Campaign Registry.
+                    <strong>We do not sell your phone number, email address, message content, call content, or any other personal information to third parties.</strong> We do not share your data with third parties for their own marketing purposes.
                 </p>
 
                 <h2>3. How We Use Information</h2>
                 <ul>
                     <li>To respond to contact form inquiries and schedule discovery calls.</li>
-                    <li>To operate the Relay platform on behalf of subscribing businesses — answering calls, generating call summaries, sending owner SMS notifications and email alerts, and sending caller booking confirmations when the caller has verbally opted in.</li>
+                    <li>To operate the Relay platform on behalf of subscribing businesses — answering calls, generating call summaries, emailing owner notifications and daily digests, and sending caller appointment confirmations when the caller provides an email address.</li>
                     <li>To bill subscribing businesses (via Stripe) for their use of the Relay platform.</li>
                     <li>To monitor service quality, investigate errors, and detect abuse or fraud.</li>
                     <li>To comply with legal obligations and enforce our Terms of Service.</li>
@@ -155,7 +129,7 @@
 
                 <h2>4. Data Retention</h2>
                 <p>
-                    Contact form submissions are retained as long as our relationship requires. Relay call recordings and transcripts are retained per the subscribing business's configured retention window (default 90 days; selectable from 30 days to unlimited from the dashboard), unless the business or end user requests earlier deletion. Outbound SMS bodies and delivery metadata are retained alongside the related call record. Caller SMS opt-in audit entries are retained for the lifetime of the subscribing business's account so we can produce the verbal-consent log on request. Billing records are retained for the period required by tax law (typically seven years).
+                    Contact form submissions are retained as long as our relationship requires. Relay call recordings and transcripts are retained per the subscribing business's configured retention window unless the business or end user requests earlier deletion. Notification emails and delivery metadata may be retained alongside the related call, appointment, or account record. Billing records are retained for the period required by tax law (typically seven years).
                 </p>
 
                 <h2>5. Sharing With Third Parties</h2>
@@ -165,9 +139,9 @@
                 <ul>
                     <li><strong>Google Cloud Platform</strong> — hosting, Firestore database, Cloud Run compute, Vertex AI (Gemini) language model, and Google Calendar (only for businesses that connect it).</li>
                     <li><strong>Google Identity Platform (Firebase Auth)</strong> — stores email/password authentication credentials for Relay subscribers; passwords are never transmitted to or stored by Sandy Brook.</li>
-                    <li><strong>Twilio</strong> — telephony and SMS delivery infrastructure.</li>
+                    <li><strong>Twilio</strong> — telephony infrastructure.</li>
                     <li><strong>Stripe</strong> — subscription and usage billing.</li>
-                    <li><strong>SendGrid</strong> — transactional email notifications.</li>
+                    <li><strong>Brevo</strong> — transactional email notifications.</li>
                     <li><strong>Formspree</strong> — contact form submissions on this website.</li>
                 </ul>
                 <p>
@@ -189,7 +163,7 @@
                     <li>Request deletion of your information.</li>
                     <li>Object to, or limit, certain processing.</li>
                     <li>Receive your information in a portable format.</li>
-                    <li>Withdraw consent, including opting out of SMS (see Section 2).</li>
+                    <li>Withdraw consent where processing is based on consent.</li>
                 </ul>
                 <p>
                     To exercise these rights, email <a href="mailto:privacy@sandybrook.io">privacy@sandybrook.io</a>. We respond within 30 days. We do not sell personal information, so no "Do Not Sell" process is required — but you are welcome to confirm this directly with us.

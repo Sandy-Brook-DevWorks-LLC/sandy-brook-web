@@ -19,7 +19,7 @@ This repository contains the source code for the Sandy Brook DevWorks landing pa
 - **Neighborly Positioning**: Focused on automation, AI, and .NET solutions for small and medium businesses — not executive consulting.
 - **Responsive Design**: Fully mobile-friendly layout.
 - **Dark Mode Support**: System-preference-aware theme toggling.
-- **Projects Lab Section**: Showcases internal projects — **KnowItOwl!**, **Aquorbis**, and **Relay** — that link out to the sibling lab site at [sandybrook.io](https://sandybrook.io).
+- **Projects Lab Section**: Showcases shipped work — **KnowItOwl!**, **Aquorbis**, and the fully released **Relay** AI phone receptionist. Relay links to its product site at [relayconnect.net](https://relayconnect.net), while the other lab projects link to [sandybrook.io](https://sandybrook.io).
 - **Integrated Contact Flow**:
   - Custom AJAX form submission with loading states and error handling.
   - Dedicated "Thank You" confirmation page.
