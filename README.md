@@ -1,10 +1,12 @@
 # Sandy Brook DevWorks LLC | Landing Site
 
-Landing site for **Sandy Brook DevWorks LLC** — the tech neighbor for small and medium businesses in Round Rock, Texas. Custom automation, AI-powered tools, and .NET solutions that bring enterprise-quality software down to a small-business budget.
+Landing site for **Sandy Brook DevWorks LLC**, an independent software company in Round Rock, Texas that builds and maintains its own consumer applications.
 
 ## 🚀 Overview
 
-This repository contains the source code for the Sandy Brook DevWorks landing page. The site is positioned around a warm, approachable "tech neighbor" persona — someone who brings 15+ years of enterprise software experience to businesses that don't have (or need) an in-house engineering department.
+This repository contains the company website at **sandybrookdevworks.com**. It introduces the company and its apps, and provides a contact channel for app support and feedback. Product details and download links live at [Sandy Brook Labs](https://sandybrook.io), with Relay at [relayconnect.net](https://relayconnect.net). The company does not offer consulting or custom development services.
+
+The site is hosted on GitHub Pages and deploys when changes are pushed to the configured publishing branch.
 
 ## 🛠️ Tech Stack
 
@@ -16,19 +18,18 @@ This repository contains the source code for the Sandy Brook DevWorks landing pa
 
 ## ✨ Key Features
 
-- **Neighborly Positioning**: Focused on automation, AI, and .NET solutions for small and medium businesses — not executive consulting.
+- **Consumer App Focus**: Introduces the independent company behind our apps.
 - **Responsive Design**: Fully mobile-friendly layout.
 - **Dark Mode Support**: System-preference-aware theme toggling.
-- **Projects Lab Section**: Showcases shipped work — **KnowItOwl!**, **Aquorbis**, and the fully released **Relay** AI phone receptionist. Relay links to its product site at [relayconnect.net](https://relayconnect.net), while the other lab projects link to [sandybrook.io](https://sandybrook.io).
+- **App Discovery**: Features **KnowItOwl!** and **Aquorbis**, with a secondary link to **Relay**. Links to the product sites for details.
 - **Integrated Contact Flow**:
   - Custom AJAX form submission with loading states and error handling.
   - Dedicated "Thank You" confirmation page.
-- **Direct Scheduling**: Integration with Google Calendar for free 30-minute discovery calls.
 
 ## 📂 Project Structure
 
 - `index.html` — The main landing page.
-- `contact.html` — Contact form and FAQ section.
+- `contact.html` — App support and feedback form with FAQs.
 - `thank-you.html` — Form submission confirmation page.
 - `privacy.html`, `terms.html` — Legal pages.
 - `css/` — Shared site styles (`site.css`) and policy-page styles (`policy.css`).

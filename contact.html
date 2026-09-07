@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Sandy Brook DevWorks LLC</title>
-    <meta name="description" content="Have a tech question or a project in mind? Let's talk. Sandy Brook DevWorks helps small and medium businesses in Round Rock, Texas get more done with modern technology.">
+    <meta name="description" content="Contact Sandy Brook DevWorks for app support, bug reports, feedback, and company inquiries.">
     <link rel="icon" type="image/jpeg" href="images/blue_logo.jpg">
     <link rel="apple-touch-icon" href="images/blue_logo.jpg">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
@@ -21,7 +21,7 @@
         }
         @custom-variant dark (&:where(.dark, .dark *));
     </style>
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/site.css?v=20260907">
     <script src="js/theme.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 transition-colors duration-300">
@@ -42,17 +42,18 @@
                 </div>
             </div>
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="index.html#services" class="hover:text-brand transition-colors">What I Do</a>
+                <a href="index.html#apps" class="hover:text-brand transition-colors">Our Apps</a>
                 <a href="index.html#about" class="hover:text-brand transition-colors">About</a>
-                <a href="index.html#projects-lab" class="hover:text-brand transition-colors">Projects Lab</a>
+                <a href="https://sandybrook.io" class="hover:text-brand transition-colors">Sandy Brook Labs</a>
+                <a href="contact.html" class="hover:text-brand transition-colors">Contact</a>
                 <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle Theme">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dark:hidden"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden dark:block"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
                 </button>
             </div>
             <div class="flex items-center gap-4">
-                <a href="https://calendar.app.google/ZToWtNESKPuPevMu8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-brand px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-shadow transition-all hover-bg-brand hover:scale-105 active:scale-95">
-                    Book a Call
+                <a href="index.html#apps" class="inline-flex items-center justify-center rounded-full bg-brand px-4 sm:px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-shadow transition-all hover-bg-brand hover:scale-105 active:scale-95">
+                    Explore Apps
                 </a>
             </div>
         </div>
@@ -61,9 +62,9 @@
     <main class="container mx-auto px-4 py-16 md:py-24">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
-                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-6">Let's Talk <span class="text-brand">Tech.</span></h1>
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-6">Let’s Talk <span class="text-brand">Apps.</span></h1>
                 <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                    Have a process that's driving you crazy? An idea you want to explore? Just want to know what's possible? I'm happy to have a real conversation no pitch, no pressure.
+                    Need help with one of our apps or have feedback to share? Send us a message and let us know which app you are using.
                 </p>
             </div>
 
@@ -78,19 +79,19 @@
                             <input type="text" id="name" name="name" required class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900">
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Business Email</label>
+                            <label for="email" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Email</label>
                             <input type="email" id="email" name="email" required class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900">
                         </div>
                         <div>
-                            <label for="website" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Website URL (Optional)</label>
-                            <input type="url" id="website" name="website" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900" placeholder="https://">
+                            <label for="app" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">App Name (Optional)</label>
+                            <input type="text" id="app" name="app" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900" placeholder="e.g., KnowItOwl! or Aquorbis">
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium mb-2 text-slate-700 dark:text-slate-300">Message</label>
                             <textarea id="message" name="message" rows="5" required class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition-all focus:border-brand focus:ring-1 focus:ring-brand dark:border-slate-800 dark:bg-slate-900"></textarea>
                         </div>
                         <div id="error-message" class="hidden rounded-xl bg-red-50 p-4 text-red-800 dark:bg-red-900/30 dark:text-red-400">
-                            Something went wrong. Please try again or reach out directly at <a href="mailto:hello@sandybrook.io" class="underline font-medium">hello@sandybrook.dev</a>.
+                            Something went wrong. Please try again or reach out directly at <a href="mailto:hello@sandybrook.io" class="underline font-medium">hello@sandybrook.io</a>.
                         </div>
                         <button type="submit" id="submit-button" class="w-full rounded-full bg-brand py-4 text-lg font-bold text-white shadow-xl shadow-brand-shadow transition-all hover-bg-brand hover:scale-[1.02] active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed">
                             Send Message
@@ -103,28 +104,20 @@
                     <h2 class="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
                     <div class="space-y-8">
                         <div>
-                            <h3 class="text-lg font-bold mb-2 text-brand">What kinds of businesses do you work with?</h3>
-                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                                Mostly small and medium businesses in Round Rock, Texas. Anywhere from a 5-person operation to a 200-person company. If you're using spreadsheets to run things that should be automated, or you have software that isn't talking to each other, I can probably help.
-                            </p>
+                            <h3 class="text-lg font-bold mb-2 text-brand">Where can I find your apps?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Visit <a href="https://sandybrook.io" class="text-brand underline underline-offset-4">Sandy Brook Labs</a> for app details and download links. Relay has its own product site at <a href="https://relayconnect.net/" class="text-brand underline underline-offset-4">relayconnect.net</a>.</p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold mb-2 text-brand">Do I need to understand software to work with you?</h3>
-                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                                Not at all. I translate the technical stuff into plain language and focus on business outcomes, not jargon. You tell me what problem you want solved; I figure out how to solve it.
-                            </p>
+                            <h3 class="text-lg font-bold mb-2 text-brand">What should I include in a support request?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Please include the app name, your device and operating system, and a description of what happened. For a bug report, the steps that led to it help us investigate. Please do not send passwords or payment details.</p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold mb-2 text-brand">What does a typical first project look like?</h3>
-                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                                Often it's something specific and achievable automating a manual process, connecting two systems that don't talk to each other, or building a small internal tool. Starting small lets us build trust before tackling bigger things.
-                            </p>
+                            <h3 class="text-lg font-bold mb-2 text-brand">Can I suggest a feature?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Absolutely. Tell us which app you use, what you would like to do, and how it would help. We welcome ideas as we continue improving our apps.</p>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold mb-2 text-brand">Do you only work in Round Rock, Texas?</h3>
-                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                                I'm based in Round Rock, Texas and prefer working locally where I can meet face-to-face. That said, I do work with clients remotely when the project is the right fit.
-                            </p>
+                            <h3 class="text-lg font-bold mb-2 text-brand">Do you offer consulting or custom development?</h3>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">No. Sandy Brook DevWorks focuses on building and maintaining our own applications. We are not accepting consulting or custom software projects.</p>
                         </div>
                     </div>
                 </div>
@@ -144,10 +137,10 @@
                     </div>
                 </a>
                 <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
-                    <a href="index.html#services" class="hover:text-brand transition-colors">What I Do</a>
+                    <a href="index.html#apps" class="hover:text-brand transition-colors">Our Apps</a>
                     <a href="index.html#about" class="hover:text-brand transition-colors">About</a>
-                    <a href="index.html#projects-lab" class="hover:text-brand transition-colors">Projects Lab</a>
-                    <a href="#" class="hover:text-brand transition-colors font-bold text-brand">Contact</a>
+                    <a href="https://sandybrook.io" class="hover:text-brand transition-colors">Sandy Brook Labs</a>
+                    <a href="contact.html" class="hover:text-brand transition-colors">Contact</a>
                     <a href="privacy.html" class="hover:text-brand transition-colors">Privacy</a>
                     <a href="terms.html" class="hover:text-brand transition-colors">Terms</a>
                 </div>

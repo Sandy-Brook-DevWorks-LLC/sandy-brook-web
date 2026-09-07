@@ -22,3 +22,8 @@ body {
 .dark .text-brand { color: var(--brand-teal-light); }
 .dark .bg-brand { background-color: var(--brand-teal-light); }
 .dark .border-brand { border-color: var(--brand-teal-light); }
+
+/* Keep brand accents legible on the app section's always-dark background. */
+#apps .text-brand { color: #7dd3d8; }
+#apps a.text-brand:hover { color: #fff; }
+section[id] { scroll-margin-top: 4rem; }
